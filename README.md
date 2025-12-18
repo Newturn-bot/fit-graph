@@ -1,7 +1,17 @@
+<<<<<<< HEAD
 
 # FitGraph demo (MemMachine + Neo4j)
 
 FitGraph is a demo that combines a simulated MemMachine (MemVerge) insight extractor with a Neo4j graph database to store user body-attribute constraints and check fit risk for products. It's designed as a lightweight, reproducible demo you can run locally or in a container for hackathon presentations.
+
+Requirements
+- Python 3.8+
+- Dependencies in `requirements.txt` (recommended to install in a venv):
+
+```bash
+# fit-graph — FitGraph demo (MemMachine + Neo4j)
+
+A graph-based fitness recommendation demo that combines a simulated MemMachine (MemVerge) insight extractor with a Neo4j graph database. FitGraph stores user body-attribute constraints and checks fit risk for products. It's designed as a lightweight, reproducible demo suitable for hackathon presentations.
 
 Requirements
 - Python 3.8+
@@ -18,7 +28,7 @@ Running
 
 ```bash
 # replace with your real password
-# from the project root (Desktop in this repo)
+# from the project root
 NEO4J_URI='neo4j://localhost:7687' NEO4J_PASSWORD='your_password_here' python3 "./fitgraph_complete_integration.py" --auto
 ```
 
