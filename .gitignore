@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# Pytest cache
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Docker
+*.log
+
+# Editor directories
+.vscode/
+.idea/

@@ -1,0 +1,14 @@
+
+=== FITGRAPH: MemMachine + Neo4j Demo ===
+
+[1] Press ENTER to initialize the database... [auto]
+[NEO4J] Initialized catalog with sample products.
+
+[2] Press ENTER to simulate user return and process feedback... [auto]
+[MEMMACHINE] Insight: {"detected_constraint": "Broad Shoulders", "confidence": 0.98}
+[NEO4J] Saved constraint 'Broad Shoulders' for user 'user_123' and product 'zara_blazer_001'.
+[AGENT] Stored constraint: Broad Shoulders
+
+[3] Press ENTER to simulate shopping for H&M jacket... [auto]
+
+[AGENT] ⚠️ STOP! FitGraph recalls you have 'Broad Shoulders'. This item ('HM Slim Fit Jacket') is likely too slim.

@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "zara_blazer_001",
+      "name": "Zara Structured Blazer",
+      "fit": "Slim"
+    },
+    {
+      "id": "hm_jacket_002",
+      "name": "HM Slim Fit Jacket",
+      "fit": "Slim"
+    }
+  ],
+  "users": [
+    {
+      "user": "user_123",
+      "constraints": [
+        "Broad Shoulders"
+      ]
+    }
+  ],
+  "conflict": [
+    {
+      "product": "HM Slim Fit Jacket",
+      "conflict": "Broad Shoulders"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  fitgraph:
+    build: .
+    env_file:
+      - .env
+    restart: unless-stopped
+    # If you need access to host network (e.g., connecting to a Neo4j on same host),
+    # uncomment the following line (Linux only):
+    # network_mode: "host"
