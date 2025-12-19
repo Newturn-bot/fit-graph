@@ -1,21 +1,10 @@
-<<<<<<< HEAD
-
 # FitGraph demo (MemMachine + Neo4j)
 
 FitGraph is a demo that combines a simulated MemMachine (MemVerge) insight extractor with a Neo4j graph database to store user body-attribute constraints and check fit risk for products. It's designed as a lightweight, reproducible demo you can run locally or in a container for hackathon presentations.
 
-Requirements
+## Requirements
 - Python 3.8+
-- Dependencies in `requirements.txt` (recommended to install in a venv):
-
-```bash
-# fit-graph — FitGraph demo (MemMachine + Neo4j)
-
-A graph-based fitness recommendation demo that combines a simulated MemMachine (MemVerge) insight extractor with a Neo4j graph database. FitGraph stores user body-attribute constraints and checks fit risk for products. It's designed as a lightweight, reproducible demo suitable for hackathon presentations.
-
-Requirements
-- Python 3.8+
-- Dependencies in `requirements.txt` (recommended to install in a venv):
+- Dependencies in `requirements.txt` (recommended to install in a venv)
 
 ```bash
 python3 -m venv .venv
@@ -23,7 +12,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Running
+## Running
 - Non-interactive (recommended for demos or CI):
 
 ```bash
@@ -40,27 +29,26 @@ export NEO4J_PASSWORD='your_password_here'
 python3 "./fitgraph_complete_integration.py"
 ```
 
-Docker (optional)
-- Build and run with docker-compose (Desktop):
+## Docker (optional)
+- Build and run with docker-compose (from project root):
 
 ```bash
-cd ~/Desktop
 docker-compose up --build
 ```
 
-Demo helper
+## Demo helper
 - Use the provided `demo.sh` to start a local Neo4j container and run the demo end-to-end:
 
 ```bash
 ./demo.sh
 ```
 
-Optional
+## Optional
 - Create a `.env` file in the project root with `NEO4J_PASSWORD` (and optionally `NEO4J_URI`) — the script will attempt to load it if `python-dotenv` is installed.
 
-Notes
+## Notes
 - The script uses the Neo4j python driver. Ensure your Neo4j instance allows the provided URI and credentials (bolt on 7687 for local container).
-- The CLI flags `--init-only`, `--simulate-feedback`, `--check-only`, `--auto` allow fine-grained automation for demos and CI.
+- The CLI flags `--init-only`, `--simulate-feedback`, `--check-only`, and `--auto` allow fine-grained automation for demos and CI.
 
-Pitch for judges
+## Pitch for judges
 - See `JUDGES.md` for a one-page pitch, technical choices, and evaluation points for judges.
